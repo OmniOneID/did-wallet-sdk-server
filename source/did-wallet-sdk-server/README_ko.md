@@ -6,7 +6,7 @@
 | 구분 | 내용                |
 |------|----------------------------|
 | Language  | Java 17|
-| Build System  | Gradle 8.2.1 |
+| Build System  | Gradle 8.8 |
 
 ## 빌드 방법
 : 본 SDK 프로젝트의 build.gradle 파일을 기반으로 JAR 파일을 생성한다.
