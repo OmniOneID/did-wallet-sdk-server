@@ -6,7 +6,7 @@ This document is a guide to using the OpenDID Server Wallet SDK, which provides 
 | Component | Requirement     |
 |------|----------------------------|
 | Language  | Java 17|
-| Build System  | Gradle 8.2.1 |
+| Build System  | Gradle 8.8 |
 
 ## Build Method
 : Create a JAR file based on the build.gradle file of this SDK project.
