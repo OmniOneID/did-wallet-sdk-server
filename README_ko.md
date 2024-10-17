@@ -40,7 +40,7 @@ did-wallet-sdk-server
 | ------- | ------------------------------------ |
 | source  |  SDK 소스코드 프로젝트             |
 | docs  |   문서            |
-| sample  |  샘플 및 데이터            |
+| ┖ api  |  API 가이드 문서          |
 | README.md  |  프로젝트의 전체적인 개요 설명     |
 | CLA.md             | Contributor License Agreement|
 | CHANGELOG.md| 프로젝트 버전별 변경사항           |
