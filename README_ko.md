@@ -99,7 +99,7 @@ dependencies {
 
 ## 라이브러리
 
-라이브러리는 [build 폴더](/source/release/)에서 찾을 수 있습니다.
+라이브러리는 [Releases](https://github.com/OmniOneID/did-wallet-sdk-server/releases) 에서 찾을 수 있습니다.
 
 ## Wallet SDK
 1. 서버 프로젝트에 `did-crypto-sdk-server-1.0.0.jar` 파일을 복사한다.
