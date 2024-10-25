@@ -10,6 +10,7 @@ did-wallet-sdk-server
 ├── CLA.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── LICENSE
 ├── LICENSE-dependencies.md
 ├── MAINTAINERS.md
 ├── README_ko.md
@@ -22,19 +23,21 @@ did-wallet-sdk-server
 │        ├── WALLET_SDK_SERVER_API_ko.md
 │        └── WalletSDKError.md
 └── source
-    └── did-wallet-sdk-server
-        ├── .gitignore
-        ├── build.gradle
-        ├── gradle
-        │    └── wrapper
-        ├── gradlew
-        ├── gradlew.bat
-        ├── libs
-        │    └── did-crypto-sdk-server-1.0.0.jar 
-        ├── README_ko.md
-        ├── README.md
-        ├── settings.gradle
-        └── src
+    ├── did-wallet-sdk-server
+    │   ├── .gitignore
+    │   ├── build.gradle
+    │   ├── gradle
+    │   │    └── wrapper
+    │   ├── gradlew
+    │   ├── gradlew.bat
+    │   ├── libs
+    │   │    └── did-crypto-sdk-server-1.0.0.jar 
+    │   ├── README_ko.md
+    │   ├── README.md
+    │   ├── settings.gradle
+    │   └── src
+    └── release
+        └── did-wallet-sdk-server-1.0.0.jar
 ```
 
 | Name                    | Description                                     |
@@ -47,6 +50,7 @@ did-wallet-sdk-server
 | CHANGELOG.md            | Version-specific changes in the project         |
 | CODE_OF_CONDUCT.md      | Code of conduct for contributors                |
 | CONTRIBUTING.md         | Contribution guidelines and procedures          |
+| LICENSE                 | Apache 2.0                                      |
 | LICENSE-dependencies.md | Licenses for the project’s dependency libraries |
 | MAINTAINERS.md          | General guidelines for maintaining              |
 | RELEASE-PROCESS.md      | Release process                                 |
@@ -96,8 +100,9 @@ dependencies {
 
 ## Libraries
 
-Libraries can be found in the [build folder](did-wallet-sdk-server/source/did-wallet-sdk-server/build/libs).
+Libraries can be found in the [Releases](https://github.com/OmniOneID/did-wallet-sdk-server/releases).
 
+## Wallet SDK
 1. Copy the `did-crypto-sdk-server-1.0.0.jar` file to the libs of the server project.
 2. Add the following dependencies to the build.gradle of the server project.
 
@@ -122,4 +127,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_
 
 
 ## License
-Copyright 2024 Raonsecure
+[Apache 2.0](LICENSE)

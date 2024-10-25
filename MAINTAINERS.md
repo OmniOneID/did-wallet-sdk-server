@@ -34,6 +34,6 @@ For ordinary questions, we suggest you contact [active contributors](../../graph
 
 ## Emeritus Maintainers
 
-| Name                      | GitHub           | email                                      |
-|---------------------------|------------------|--------------------------------------------|
-|                           |                  |                                            |     
+| Name                      | GitHub                  | email                               |
+|---------------------------|------------------|----------------------------------------------------|
+|             |           |  |     
