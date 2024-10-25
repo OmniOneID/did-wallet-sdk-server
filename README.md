@@ -100,7 +100,7 @@ dependencies {
 
 ## Libraries
 
-Libraries can be found in the [build folder](/source/release/).
+Libraries can be found in the [Releases](https://github.com/OmniOneID/did-wallet-sdk-server/releases).
 
 ## Wallet SDK
 1. Copy the `did-crypto-sdk-server-1.0.0.jar` file to the libs of the server project.
