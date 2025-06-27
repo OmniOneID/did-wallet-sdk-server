@@ -5,7 +5,7 @@ This document is a guide to using the OpenDID Server Wallet SDK, which provides 
 ## S/W Specifications
 | Component | Requirement     |
 |------|----------------------------|
-| Language  | Java 17|
+| Language  | Java 21|
 | Build System  | Gradle 8.8 |
 
 ## Build Method
@@ -25,13 +25,13 @@ repositories {
 group = 'org.omnione.did'
 jar {
     archiveBaseName.set('did-wallet-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-	sourceCompatibility = '17'
-	targetCompatibility = '17'
+	sourceCompatibility = '21'
+	targetCompatibility = '21'
 }
 
 dependencies {
@@ -40,19 +40,19 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.slf4j:slf4j-api:2.0.7'
 
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
 }
 
 ```
 
 2. Open the `Gradle` tab in IDE and run the project's `Task > Build > Clean and Build` task, or type './gradlew clean and build' in a terminal.
-3. Once the execution is complete, the `did-wallet-sdk-server-1.0.0.jar`  file will be generated in the `{projetPath}/build/libs/` folder.
+3. Once the execution is complete, the `did-wallet-sdk-server-2.0.0.jar`  file will be generated in the `{projetPath}/build/libs/` folder.
 
 
 <br>
 
 ## SDK Application Method
-1. Copy each of the files `did-crypto-sdk-server-1.0.0.jar`, `did-wallet-sdk-server-1.0.0.jar` to libs in the server project.
+1. Copy each of the files `did-crypto-sdk-server-2.0.0.jar`, `did-wallet-sdk-server-2.0.0.jar` to libs in the server project.
 2. Add the following dependencies to the `build.gradle` of the server project.
 
 ```groovy
@@ -61,8 +61,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.slf4j:slf4j-api:2.0.7'
 
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
-    implementation files('libs/did-wallet-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
+    implementation files('libs/did-wallet-sdk-server-2.0.0.jar')
 ```
 3. Sync `Gradle` to ensure the dependencies are properly added.
 

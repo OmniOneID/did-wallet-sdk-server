@@ -21,13 +21,13 @@ repositories {
 group = 'org.omnione.did'
 jar {
     archiveBaseName.set('did-wallet-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-	sourceCompatibility = '17'
-	targetCompatibility = '17'
+	sourceCompatibility = '21'
+	targetCompatibility = '21'
 }
 
 
@@ -40,5 +40,5 @@ dependencies {
     implementation 'com.google.guava:guava:33.2.1-jre'
     implementation 'com.google.code.gson:gson:2.8.9'
 	implementation 'org.slf4j:slf4j-api:2.0.7'
-	implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
+	implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
 }

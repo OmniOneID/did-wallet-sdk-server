@@ -5,7 +5,7 @@
 ## S/W 사양
 | 구분 | 내용                |
 |------|----------------------------|
-| Language  | Java 17|
+| Language  | Java 21|
 | Build System  | Gradle 8.8 |
 
 ## 빌드 방법
@@ -25,13 +25,13 @@ repositories {
 group = 'org.omnione.did'
 jar {
     archiveBaseName.set('did-wallet-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-	sourceCompatibility = '17'
-	targetCompatibility = '17'
+	sourceCompatibility = '21'
+	targetCompatibility = '21'
 }
 
 dependencies {
@@ -40,19 +40,19 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.slf4j:slf4j-api:2.0.7'
 
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
 }
 
 ```
 
 2. IDE에서 `Gradle` 창을 열고, 프로젝트의 `Tasks > build > clean & build` 태스크를 실행 또는 `./gradlew clean & build` 를 터미널 창에 입력한다.
-3. 실행이 완료되면 `{projetPath}/build/libs/` 폴더에 `did-wallet-sdk-server-1.0.0.jar` 파일이 생성된다.
+3. 실행이 완료되면 `{projetPath}/build/libs/` 폴더에 `did-wallet-sdk-server-2.0.0.jar` 파일이 생성된다.
 
 
 <br>
 
 ## SDK 적용 방법
-1. 서버 프로젝트의 libs에 각 `did-crypto-sdk-server-1.0.0.jar`, `did-wallet-sdk-server-1.0.0.jar` 파일을 복사한다.
+1. 서버 프로젝트의 libs에 각 `did-crypto-sdk-server-2.0.0.jar`, `did-wallet-sdk-server-2.0.0.jar` 파일을 복사한다.
 2. 서버 프로젝트의 build gradle에 아래 의존성을 추가한다.
 
 ```groovy
@@ -61,8 +61,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.slf4j:slf4j-api:2.0.7'
 
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
-    implementation files('libs/did-wallet-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
+    implementation files('libs/did-wallet-sdk-server-2.0.0.jar')
 ```
 3. `Gradle`을 동기화하여 의존성이 제대로 추가되었는지 확인한다.
 

@@ -11,7 +11,7 @@ did-wallet-sdk-server
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
-├── LICENSE-dependencies.md
+├── dependencies-license.md
 ├── MAINTAINERS.md
 ├── README_ko.md
 ├── README.md
@@ -31,13 +31,13 @@ did-wallet-sdk-server
     │   ├── gradlew
     │   ├── gradlew.bat
     │   ├── libs
-    │   │    └── did-crypto-sdk-server-1.0.0.jar 
+    │   │    └── did-crypto-sdk-server-2.0.0.jar 
     │   ├── README_ko.md
     │   ├── README.md
     │   ├── settings.gradle
     │   └── src
     └── release
-        └── did-wallet-sdk-server-1.0.0.jar
+        └── did-wallet-sdk-server-2.0.0.jar
 ```
 
 | Name                    | Description                                     |
@@ -51,7 +51,7 @@ did-wallet-sdk-server
 | CODE_OF_CONDUCT.md      | Code of conduct for contributors                |
 | CONTRIBUTING.md         | Contribution guidelines and procedures          |
 | LICENSE                 | Apache 2.0                                      |
-| LICENSE-dependencies.md | Licenses for the project’s dependency libraries |
+| dependencies-license.md | Licenses for the project’s dependency libraries |
 | MAINTAINERS.md          | General guidelines for maintaining              |
 | RELEASE-PROCESS.md      | Release process                                 |
 | SECURITY.md             | Security policies and vulnerability reporting   |
@@ -73,13 +73,13 @@ repositories {
 group = 'org.omnione.did'
 jar {
     archiveBaseName.set('did-wallet-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {
@@ -88,13 +88,13 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.slf4j:slf4j-api:2.0.7'
 
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
 }
 
 ```
 
 2. Open the `Gradle` tab in IDE and run the project's `Task > Build > Clean and Build` task, or type './gradlew clean and build' in a terminal.
-3. Once the execution is complete, the `did-wallet-sdk-server-1.0.0.jar`  file will be generated in the `{projetPath}/build/libs/` folder.
+3. Once the execution is complete, the `did-wallet-sdk-server-2.0.0.jar`  file will be generated in the `{projetPath}/build/libs/` folder.
 
 <br>
 
@@ -103,11 +103,11 @@ dependencies {
 Libraries can be found in the [Releases](https://github.com/OmniOneID/did-wallet-sdk-server/releases).
 
 ## Wallet SDK
-1. Copy the `did-crypto-sdk-server-1.0.0.jar` file to the libs of the server project.
+1. Copy the `did-crypto-sdk-server-2.0.0.jar` file to the libs of the server project.
 2. Add the following dependencies to the build.gradle of the server project.
 
 ```groovy
-    implementation files('libs/did-crypto-sdk-server-1.0.0.jar')
+    implementation files('libs/did-crypto-sdk-server-2.0.0.jar')
 
     implementation 'org.bouncycastle:bcprov-jdk18on:1.78.1'
     implementation 'com.google.guava:guava:33.2.1-jre'
@@ -120,6 +120,15 @@ Libraries can be found in the [Releases](https://github.com/OmniOneID/did-wallet
 
 API Reference can be found [here](docs/api/WALLET_SDK_SERVER_API.md)
 
+## Change Log
+
+The Change Log provides a detailed record of version-specific changes and updates. You can find it here:
+- [Change Log](./CHANGELOG.md)
+
+## OpenDID Demonstration Videos <br>
+To watch our demonstration videos of the OpenDID system in action, please visit our [Demo Repository](https://github.com/OmniOneID/did-demo-server). <br>
+
+These videos showcase key features including user registration, VC issuance, and VP submission processes.
 
 ## Contributing
 
